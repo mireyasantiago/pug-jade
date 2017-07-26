@@ -1,0 +1,40 @@
+
+doctype html
+html(lang='en')
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+        title ejercicio con jade
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css")
+    body
+        nav
+            div.nav-wrapper
+                a.brand-logo logo
+                ul#nav-mobile.right.hide-on-med-and-down  
+                    li
+                        a hola
+  
+        h1 este es la que se vera en el html
+        div.container
+            mixin deporte(imagen,encabezado,precio)
+                .col.x6
+                    img(src="http://lorempixel.com/400/200/sports/#{imagen}")
+                    h2 #{encabezado}
+                    p $ #{precio}
+            .row
+                +deporte(1,"beisbol","70")
+                +deporte(2,"suft","90")
+            .row
+                +deporte(1,"beisbol","70")
+                +deporte(2,"suft","90")
+            
+                        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js")
+ 
+   
+     
+    
+
+  
+  

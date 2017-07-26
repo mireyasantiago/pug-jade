@@ -1,0 +1,15 @@
+{
+  "name": "pug",
+  "version": "1.0.0",
+  "description": "utilizando una herramienta de desarrollo()\u001b[Dpug\u001b[)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mireya lopez santiago",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0"
+  }
+}
