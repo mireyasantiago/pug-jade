@@ -1,13 +1,29 @@
-body{
-  background-color: pink;
-}
+
 nav{
   height: 80px;
-  padding: 20px 20px 20px 50px;
+  padding: 20px;
 }
 nav img{
   width: 150px;
 }
-nav ul li a{
-  padding: 20px 20px 20px 50px;
+nav ul li {
+  margin-top: 0;
+}
+#fondo{
+  background-image: url(../dist/img/fondo.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.8);
+  filter:brightness(0.4);
+}
+.estilo-boton{
+  border-radius: 40px;
+  border-color: pink;
+  border: solid 5px;
+  width:200px;
+  height:200px;
+  padding: 10px;
+  font-size: 15px;
+  color: blue;
 }
