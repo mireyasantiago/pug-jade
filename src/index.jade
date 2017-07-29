@@ -1,54 +1,96 @@
 
 doctype html
 html(lang='en')
-    head
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        meta(charset="utf-8")
-        title ejercicio con jade
-        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css")
-        link(rel="stylesheet" href="../dist/main.css")
-    body
-        nav
-            div.nav-wrapper
-                img(src="../dist/img/textoNegro.png")
-                ul#nav-mobile.right.hide-on-med-and-down  
-                    li
-                        a About
-                    li
-                        a Features
-        div.container-fluid.opacity#fondo
-            div.row
-                div.col.s6.offset-s1
-                    h1 Mobile Strategy App
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                     div.row
-                        buttom.estilo-boton Features
-                        buttom.estilo-boton Features
-                     
-                     
-                      
-                        
-  
-      
-        div.container
-            mixin deporte(imagen,encabezado,precio)
-                .col.x6
-                    img(src="http://lorempixel.com/400/200/sports/#{imagen}")
-                    h2 #{encabezado}
-                    p $ #{precio}
-            .row
-                +deporte(1,"beisbol","70")
-                +deporte(2,"suft","90")
-            .row
-                +deporte(1,"beisbol","70")
-                +deporte(2,"suft","90")
-            
-                        
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js")
- 
-   
-     
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    title ejercicio con jade
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css")
+    link(rel="stylesheet" href="../dist/main.css")
+  body
+    nav
+      div.nav-wrapper
+        img(src="../dist/img/textoNegro.png")
+        ul#nav-mobile.right.hide-on-med-and-down
+          li
+            a About
+          li
+            a Features
+    div.container-fluid.opacity#fondo
+      div.row
+        div.col.s6.offset-s1
+          h1 Mobile Strategy App
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          p incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          p exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          p in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          div.row
+            buttom.estilo-boton.boton--azul.margen--abajo Features
+            buttom.estilo-boton.boton--transparente.margen--abajo Features
+          div.row
+
+            ul#elementos--linea
+              li
+                p.margen Available for:
+              li
+                i.large.material-icons adb
+              li
+                p.margen IOS
+              li
+                i.large.material-icons android
+              li
+                p ANDROID
+
+    div.container-fluid
+      div.row
+        div.col.l5.offset-l1
+          img(src="../dist/img/cel.jpg" class="imagen")
+
+        mixin imagen(titulo)
+          h3 #{titulo}
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          p seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p Utenim ad minim veniam, quis nostrud exercitation ullamco laboris
+          p nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          p in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        div.col.l5
+          +imagen("Optimize performance throung advanced targentings solutions")
+
+      div.row
+        h2.center-align Recreate your ideasand gain more sucess
+        p.center-align increase your user loyalty by maintaining mutual communication and nurturingyour online community
+        div.col.l3.offset-l1
+          img(src="../dist/img/cel.jpg" class="imagen--mediana")
+        div.col.l8
+          div.row
+            div.col.l6
+              +imagen("Marketing Strategy")
+            div.col.l6
+              +imagen("Marketing Strategy")
+          div.row
+            div.col.l6
+              +imagen("Marketing Strategy")
+            div.col.l6
+              +imagen("Marketing Strategy")
+
+      div.row
+        div.center
+          i.circle.fa.fa-twitter.fa-lg.redes(aria-hidden="true")
+          i.circle.fa.fa-facebook.fa-lg.redes(aria-hidden="true")
+          i.circle.fa.fa-google-plus.fa-lg.redes(aria-hidden="true")
+          i.circle.fa.fa-instagram.fa-lg.redes(aria-hidden="true")
+        div.center
+          p Copyright Backyard 2015 - Template by
+          span.texto--azul    Mox Design
+
+
+
+
+
+
+
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js")

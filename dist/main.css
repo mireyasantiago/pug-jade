@@ -14,16 +14,56 @@ nav ul li {
   height: 80vh;
   background-position: center;
   background-size: cover;
-  background-color: rgba(0,0,0,0.8);
-  filter:brightness(0.4);
+  background-color: rgba(0,0,0,0.3);
+  filter:brightness(0.7);
+}
+#elementos--linea li{
+  display: inline-block;
+  margin-top: 30px;
+}
+#elementos--linea p{
+  color: red;
+}
+#elementos--linea i{
+  font-size: 20px;
+  color: red;
+}
+.margen{
+  margin-right: 30px;
+}
+.mergen--abajo{
+  margin-top: 30px;
 }
 .estilo-boton{
   border-radius: 40px;
-  border-color: pink;
+  border-color:#00FFFF;
   border: solid 5px;
   width:200px;
   height:200px;
   padding: 10px;
   font-size: 15px;
-  color: blue;
+  margin-right: 40px;
+}
+.boton--azul{
+  background-color: #00FFFF;
+  color: 	#FFFFF0;
+}
+.boton--transparente{
+  color: #00FFFF;
+}
+.tamaño--grande{
+  width: 100px;
+  height: 150px;
+}
+.texto--azul{
+  color: #00FFFF;
+}
+.imagen{
+  width: 600px;
+  height: 500px;
+}
+.imagen--mediana{
+  width: 400px;
+  height: 300px;
+  margin-top: 100px;
 }
